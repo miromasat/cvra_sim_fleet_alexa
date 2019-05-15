@@ -267,7 +267,7 @@ aws s3 cp --acl public-read --recursive output/static s3://${WEBSITE_BUCKET}/sta
 
 Before re:Invent this step will be automated.
 
-1. Create a new DynamoDB table called vehilceTable with a primary key called vin.
+1. Create a new DynamoDB table called vehicleTable with a primary key called vin.
 2. Via the IoT Simulator Automotive page make a note of the Vehicle VIN numbers.
 3. For each VIN within the IoT Simulator you will need to make a new entry into the vehicleTable with the following String Items.
  - modelName
