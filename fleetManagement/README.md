@@ -198,6 +198,8 @@ It will take a while for the CloudFront distribution to deploy, while this is ha
 
 For this step you will need Node.js (npm) installed on your laptop, if you do not have it installed you can follow these [instructions](https://www.npmjs.com/get-npm) to install it.
 
+*UPDATE: These instructions need to be updated but in the meantime if building the web ui please use Node.js version 6.1X.*
+
 You will also need the awscli setup to access your account.
 
 1. Download the source code for the Fleet Management Portal to your laptop and uncompress the [Zip File](https://s3.amazonaws.com/cvra-deepdrive-us-east-1-683617902415/web-ui.zip)
