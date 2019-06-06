@@ -58,7 +58,7 @@ Let's deploy the Connected Vehicle Reference Architecture (CVRA).
 
 #### Instructions
 
-1. To deploy the CVRA into your account click the following link [cvra-cloudformation.yaml](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.amazonaws.com/cvra-deepdrive-us-east-1-683617902415/cvra-cloudformation.yaml&stackName=cvra), this will open the CloudFormation template into your account.
+1. To deploy the CVRA into your account click the following link [aws-connected-vehicle-solution.template](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.amazonaws.com/solutions-reference/connected-vehicle-solution/latest/aws-connected-vehicle-solution.template&stackName=cvra), this will open the CloudFormation template into your account.
 
 If you are not already logged into your AWS Console you will need to log in with the AWS Account Credentials which you will want to use for this workshop.
 
@@ -84,7 +84,7 @@ For your reference information on the IoT Device Simulator can be found using th
 
 #### Instructions
 
-1. To deploy the IoT Device Simulator into your account click the following link [iot-device-simulator.yaml](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.amazonaws.com/cvra-deepdrive-us-east-1-683617902415/iot-device-simulator.yaml&stackName=IoT-Device-Sim)
+1. To deploy the IoT Device Simulator into your account click the following link [iot-device-simulator.template](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.amazonaws.com/solutions-reference/iot-device-simulator/latest/iot-device-simulator.template&stackName=sim)
 
 2. Enter a username and Email address in the dialog boxes.
 
