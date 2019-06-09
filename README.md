@@ -35,7 +35,7 @@ This workshop has been written as modular and therefore after deploying the CVRA
 
 Next, clone the git repository for this bootcamp:
 ```bash
-git clone https://github.com/dixonaws/reinvent_cvra_bootcamp
+git clone https://github.com/miromasat/cvra_sim_fleet_alexa
 ```
 
 You should now have a new directory, *reinvent_cvra_bootcamp* in your work directory. Third, complete the
@@ -103,16 +103,6 @@ The below image shows the AWS Services used to build the IoT Device Simulator fo
 
 ![IoT Device Simulator Architecture](iot-device-simulator-architecture.png)
 
-
-At this point, you can move on to the next steps where you will build a Fleet Management Function and an Alexa Skill.
-
----
-
-## Building the Fleet Management Function
-In this module you will create additional DynamoDB tables and a Lambda function on-top of the CVRA that will store the latest Telemetry data from the vehicles and the trip routes which can then be accessed by a Fleet Management dashboard which you will also deploy.
-
-The following link provides the detailed instructions for the [Fleet Management](fleetManagement/README.md) module.
-
 ---
 
 ## Generate Trip Data
@@ -141,6 +131,13 @@ The payload is of the form:
   "value": 2.267
 }
 ```
+
+---
+
+## Building the Fleet Management Function
+In this module you will create additional DynamoDB tables and a Lambda function on-top of the CVRA that will store the latest Telemetry data from the vehicles and the trip routes which can then be accessed by a Fleet Management dashboard which you will also deploy.
+
+The following link provides the detailed instructions for the [Fleet Management](fleetManagement/README.md) module.
 
 ---
 
