@@ -153,7 +153,7 @@ Additionally you can look at the DynamoDB tables created above to ensure data is
 
 ## Create a new Trip API Service
 
-1. Click the following link [Trip Function CloudFormation Template](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://s3.amazonaws.com/cvra-deepdrive-us-east-1-683617902415/trip-function-cfm.yaml&stackName=tripFunction) to deploy the CloudFormation template into your account. As part of the stack deployment you will need to reference the trip and route DynamoDB tables so please make a note of them before deploying the stack.
+1. Click the following link [Trip Function CloudFormation Template](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://raw.githubusercontent.com/miromasat/cvra_sim_fleet_alexa/master/fleetManagement/trip-function-cfm.yaml&stackName=tripFunction) to deploy the CloudFormation template into your account. As part of the stack deployment you will need to reference the trip and route DynamoDB tables so please make a note of them before deploying the stack.
 
 *Note that the above CloudFormation template also deploys a S3 Bucket which will host the Fleet Admin Portal*
 
