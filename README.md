@@ -1,4 +1,4 @@
-# AMT303 Deep Dive into the AWS Connected Vehicle Reference Solution Workshop
+# Deep Dive into the AWS Connected Vehicle Reference Solution Workshop
 During this Workshop, we'll take a deep dive into the AWS Connected Vehicle Reference Architecture (CVRA). Attendees will install it, build functions on top of the CVRA including an Alexa Skill, generate trip data from a simulated vehicles, and learn how the data can be accessed with various other AWS services.
 
 #### Prerequisites
@@ -32,19 +32,6 @@ This workshop has been written as modular and therefore after deploying the CVRA
 ## Cloud9 Preparation Steps (Optional)
 > We recommend using a Cloud9 instance (hosted IDE) for the next steps, as it is bandwidth-friendly and helpful during troubleshooting!
 > Cloud9 is free-tier eligible
-
-Next, clone the git repository for this bootcamp:
-```bash
-git clone https://github.com/miromasat/cvra_sim_fleet_alexa
-```
-
-You should now have a new directory, *reinvent_cvra_bootcamp* in your work directory. Third, complete the
-worksheet below *or*, if you are on macOS/Cloud9, you can use a utility in the reinvent_cvra_bootcamp to
-check versions and create worksheet (called worksheet.txt) for you:
-```bash
-chmod +x create_worksheet.sh
-./create_worksheet.sh
-```
 
 ***Now, you're ready to move on to Step 1 and deploy the Connected Vehicle Reference Architecture***
 
@@ -106,7 +93,6 @@ The below image shows the AWS Services used to build the IoT Device Simulator fo
 ---
 
 ## Generate Trip Data
-If you have generated trips as part of the Fleet Management module you can skip this step.
 
 Log into the IoT Device Simulator Web Console.
 
@@ -141,20 +127,6 @@ The following link provides the detailed instructions for the [Fleet Management]
 
 ---
 
-## Deploy the ConnectedCar Alexa Skill
-Click on the link for the [Alexa Skill](AlexaSkill/README.md) workshop module instructions.
-
-If you have skipped the Fleet Management module please make sure you follow the [instructions](#Generate-Trip-Data) to generate some trip data before you start this Alexa Skill module.
-
----
-
-## Optional - Build the Remote Command Function
-Click on the link for the [Remote Command](remoteCommands/README.md) workshop module instructions.
-
-*For this module you will need to write your own Lambda functions and the instructions only provide you with code snippets*
-
----
-
 ## Cleanup (10 mins)
 The last thing to do in this workshop is to clean up any resources that were deployed in your account.
 
@@ -178,15 +150,3 @@ aws cloudformation delete-stack --stack-name <your vehicle simulator stack>
 ```
 
 ---
-
-## Ideas for Customization and Enhancement
-Hopefully, you were able to learn how to make use
-of the data collected by a simulated connected vehicle (and ultimately any connected device). Here are some ideas to make enhancements and improvements from here:
-* Enhance the Alexa skill to read values from many different cars
-* Adjust the IAM roles for more granular permissions
-* Develop account linking for the ConnectedCar skill to read back information only for linked VINs
-* Create an authenticated API to access the VehicleTripTable (API Gateway, Lambda, Cognito)
-* Enhance the ConnectedCar Alexa skill to get the latest fuel prices in a certain location
-* Connect to other public APIs to enhance your Alexa skill
-* Create a deployment pipeline for your Alexa skill and Lambda function
-* Deploy the CVRA solution with a real vehicle, using Greengrass and an OBDII interface!
